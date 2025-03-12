@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import type { IAuthState } from './types'  
 import type { User } from '@/entities/user/model/types'
 
 interface AuthState {
@@ -7,7 +8,7 @@ interface AuthState {
 }
 
 export const useAuthStore = defineStore('auth', {
-  state: (): AuthState => ({
+  state: (): IAuthState => ({
     user: null,
     isAuthenticated: false
   }),

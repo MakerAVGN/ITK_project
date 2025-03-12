@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from "@/widgets/HelloWorld/HelloWorld.vue";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     <img
       alt="Vue logo"
       class="logo"
-      src="@/assets/logo.svg"
+      src="@/shared/assets/Icon/logo.svg"
       width="125"
       height="125"
     >
