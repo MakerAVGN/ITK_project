@@ -1,44 +1,49 @@
 # ITK-project
 
-This template should help get you started developing with Vue 3 in Vite.
+Проект на Vue 3, построенный по методологии Feature-Sliced Design (FSD).
 
-## Recommended IDE Setup
+## Структура проекта
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+```
+src/
+├── app/          # Инициализация приложения, провайдеры, роутинг
+├── processes/    # Бизнес-процессы
+├── pages/        # Страницы
+├── widgets/      # Композиционные компоненты
+├── features/     # Интерактивные функции
+├── entities/     # Бизнес-сущности
+└── shared/       # Переиспользуемый код, UI компоненты, API
+```
 
-## Type Support for `.vue` Imports in TS
+## Поддержка TypeScript для `.vue` файлов
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+TypeScript не может обрабатывать информацию о типах для `.vue` импортов по умолчанию, поэтому мы используем `vue-tsc` для проверки типов.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Настройка проекта
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Разработка с горячей перезагрузкой
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Сборка для продакшена
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Запуск unit-тестов с [Vitest](https://vitest.dev/)
 
 ```sh
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Линтинг с [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
